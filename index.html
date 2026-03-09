@@ -122,17 +122,17 @@ body {
 .measureRow {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     margin-bottom: 16px;
 }
 
 .measureRow button {
-    width: 48px;
-    height: 48px;
-    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
     background: linear-gradient(145deg, #4158D0, #6C5CE7);
     border: none;
-    border-radius: 16px;
+    border-radius: 14px;
     color: white;
     cursor: pointer;
     box-shadow: 0 8px 16px rgba(65, 88, 208, 0.3);
@@ -140,6 +140,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .measureRow button:active {
@@ -148,17 +149,18 @@ body {
 }
 
 .measureRow input {
-    flex: 1;
-    padding: 12px;
-    font-size: 20px;
+    width: 90px;
+    padding: 10px;
+    font-size: 18px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 14px;
     border: 2px solid transparent;
     background: linear-gradient(white, white) padding-box, 
                 linear-gradient(45deg, #4158D0, #C850C0) border-box;
     font-weight: 600;
     color: #333;
     outline: none;
+    flex-shrink: 0;
 }
 
 .dark .measureRow input {
@@ -297,37 +299,6 @@ button.main:active {
 
 .dark #results p {
     background: rgba(255,255,255,0.05);
-}
-
-/* Styles pour les onglets (simulés) */
-.tab-container {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 16px;
-}
-
-.tab {
-    flex: 1;
-    padding: 12px;
-    text-align: center;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.tab.active {
-    background: white;
-    color: #4158D0;
-    border-color: transparent;
-}
-
-.dark .tab.active {
-    background: #2a2a35;
-    color: #A463F5;
 }
 
 /* Animation pour les résultats */
